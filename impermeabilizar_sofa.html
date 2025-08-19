@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Interativo de Impermeabilização de Sofás - Dicas e Vídeos</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guia completo e interativo sobre impermeabilização de sofás. Compare produtos à base de água e solvente, entenda os métodos de aplicação e assista a tutoriais em vídeo para fazer você mesmo.">
+    <meta name="keywords" content="impermeabilizar sofá, impermeabilizante sofá, impermeabilização, impermeabilizante a base de água, impermeabilizante solvente, como impermeabilizar sofá, proteção para sofá">
+    <meta name="author" content="Guia Sofá Protegido">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Guia Interativo de Impermeabilização de Sofás">
+    <meta property="og:description" content="Tudo o que você precisa saber para proteger seu sofá. Um guia completo com comparações e vídeos práticos.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/guia-sofa-protegido">
+    <meta property="og:locale" content="pt_BR">
+    <!-- End SEO Meta Tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Calm Beige & Sage -->
+    <!-- Application Structure Plan: A estrutura foi desenhada como um painel de decisão de página única, em vez de um relatório linear. A navegação por abas guia o usuário através de uma jornada lógica: entender os 'porquês' (benefícios), comparar as opções críticas (tipos de produto), avaliar os métodos (DIY vs. Profissional) e explorar o mercado (guia de compras). Essa abordagem é mais intuitiva e focada na tarefa do usuário — tomar uma decisão informada e segura —, o que melhora significativamente a usabilidade em comparação com a leitura passiva do relatório original. A interatividade, como a alternância de conteúdo e o gráfico filtrável, transforma a análise de dados em uma experiência de descoberta. -->
+    <!-- Visualization & Content Choices: A tabela de comparação de produtos (solvente vs. água) foi transformada em um seletor interativo. Objetivo: Comparar. Método: Abas dinâmicas. Interação: Clique para revelar prós e contras. Justificativa: Reforça visualmente a principal mensagem do relatório (segurança) com cores e ícones, tornando a escolha crítica mais impactante e fácil de entender. A tabela de produtos e preços foi convertida em um gráfico de barras interativo com filtros. Objetivo: Organizar/Explorar. Método: Gráfico de Barras (Chart.js). Interação: Filtrar por tipo de base. Justificativa: Permite ao usuário visualizar e comparar faixas de preço de forma dinâmica, oferecendo uma visão mais clara do custo-benefício do que uma tabela estática. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm Neutral Background */
+            color: #4A4A4A;
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #6B8E23; /* Sage Accent */
+            border-bottom-color: #6B8E23;
+        }
+        .btn-primary {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #55711c;
+        }
+        .btn-secondary {
+            background-color: #EAE7E2;
+            color: #6B8E23;
+            transition: background-color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #DCD8D1;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #EAE7E2;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 400px;
+            max-height: 50vh;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <span class="text-[#6B8E23]">Guia</span> Sofá Protegido
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#beneficios" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Benefícios</a>
+                <a href="#tipos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Tipos de Produto</a>
+                <a href="#metodos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Métodos</a>
+                <a href="#guia-compras" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Guia de Compras</a>
+                <a href="#recomendacao" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Recomendação</a>
+                <a href="#como-fazer" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Como Fazer</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <span class="text-3xl">☰</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#beneficios" class="block nav-link text-gray-600 font-medium">Benefícios</a>
+            <a href="#tipos" class="block nav-link text-gray-600 font-medium">Tipos de Produto</a>
+            <a href="#metodos" class="block nav-link text-gray-600 font-medium">Métodos</a>
+            <a href="#guia-compras" class="block nav-link text-gray-600 font-medium">Guia de Compras</a>
+            <a href="#recomendacao" class="block nav-link text-gray-600 font-medium">Recomendação</a>
+            <a href="#como-fazer" class="block nav-link text-gray-600 font-medium">Como Fazer</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-4">Proteja seu sofá com inteligência e segurança.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Este guia interativo transforma o relatório completo sobre impermeabilização em uma ferramenta fácil de usar. Explore, compare e decida a melhor forma de conservar seu estofado.</p>
+                <a href="#beneficios" class="btn-primary font-bold py-3 px-8 rounded-full text-lg">Começar a Explorar</a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Por que Impermeabilizar?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Descubra as vantagens que vão além da simples proteção contra líquidos.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🛡️</div>
+                        <h3 class="text-xl font-bold mb-2">Proteção Duradoura</h3>
+                        <p class="text-gray-600">Cria uma barreira invisível que repele líquidos e sujeiras, prevenindo manchas permanentes e prolongando a vida útil do seu sofá em até 3 vezes.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">✨</div>
+                        <h3 class="text-xl font-bold mb-2">Limpeza Facilitada</h3>
+                        <p class="text-gray-600">Derramamentos acidentais podem ser removidos facilmente com um pano absorvente, simplificando a manutenção e mantendo o estofado sempre novo.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🌿</div>
+                        <h3 class="text-xl font-bold mb-2">Mais Higiene e Saúde</h3>
+                        <p class="text-gray-600">A camada protetora impede a proliferação de ácaros e bactérias nas fibras do tecido, contribuindo para um ambiente mais saudável para sua família.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tipos" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">A Escolha Mais Importante: Tipos de Produto</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">A diferença entre produtos à base de água e solvente é crucial para sua segurança. Selecione uma opção para comparar.</p>
+                </div>
+                <div class="flex justify-center mb-8 space-x-4">
+                    <button id="btn-agua" class="product-type-btn btn-primary font-bold py-3 px-8 rounded-full">À Base de Água</button>
+                    <button id="btn-solvente" class="product-type-btn btn-secondary font-bold py-3 px-8 rounded-full">À Base de Solvente</button>
+                </div>
+                <div id="content-agua" class="product-content">
+                    <div class="card p-8 max-w-4xl mx-auto">
+                        <h3 class="text-2xl font-bold text-green-700 mb-4">✅ Análise: Produtos à Base de Água (Recomendado)</h3>
+                        <p class="mb-6 text-gray-600">A principal vantagem é a **segurança**. São produtos não inflamáveis, com baixo odor e baixa toxicidade, ideais para uso doméstico. A aplicação é segura e não apresenta riscos de incêndio ou intoxicação.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-green-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Inflamabilidade:</strong> Nula. Totalmente seguro contra fogo.</div></li>
+                            <li class="flex items-start"><span class="text-green-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Toxicidade:</strong> Baixa. Seguro para ambientes internos e para a saúde.</div></li>
+                            <li class="flex items-start"><span class="text-yellow-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Tempo de Secagem:</strong> Mais longo. Pode levar de 8 a 24 horas para a cura completa.</div></li>
+                            <li class="flex items-start"><span class="text-green-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Recomendação:</strong> A escolha **ideal e segura** para projetos "faça você mesmo" (DIY) e para serviços profissionais que priorizam a saúde do cliente.</div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content-solvente" class="product-content hidden">
+                     <div class="card p-8 max-w-4xl mx-auto border-red-500 bg-red-50">
+                        <h3 class="text-2xl font-bold text-red-700 mb-4">⚠️ Análise: Produtos à Base de Solvente (Não Recomendado)</h3>
+                        <p class="mb-6 text-gray-700">Apesar da secagem rápida, estes produtos são **extremamente perigosos** para uso doméstico. São altamente inflamáveis e tóxicos, com risco real de incêndio, explosão e intoxicação por inalação.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-red-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Inflamabilidade:</strong> Altíssima. Risco grave de incêndio. Qualquer faísca pode causar uma ignição.</div></li>
+                            <li class="flex items-start"><span class="text-red-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Toxicidade:</strong> Alta. Vapores perigosos que exigem ventilação extrema e equipamento de proteção.</div></li>
+                            <li class="flex items-start"><span class="text-blue-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Tempo de Secagem:</strong> Extremamente rápido (menos de 5 minutos).</div></li>
+                            <li class="flex items-start"><span class="text-red-600 text-2xl mr-3">●</span><div><strong class="font-semibold">Recomendação:</strong> **Fortemente desaconselhado** para uso doméstico. Deve ser manuseado apenas por profissionais com treinamento e equipamentos de segurança rigorosos.</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="metodos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Como Aplicar: Você Mesmo ou Profissional?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Compare os custos, a conveniência e a segurança de cada abordagem.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">🏠 Faça Você Mesmo (DIY)</h3>
+                        <p class="mb-4 text-gray-600">Uma opção econômica, mas que exige responsabilidade. O processo é simples, mas a escolha do produto é vital para a segurança.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Custo até 10x menor.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Aplicação rápida (20-40 min).</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> **Exige uso exclusivo de produtos à base de água.**</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Risco de aplicação incorreta e manchas.</li>
+                        </ul>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">👨‍🔧 Serviço Profissional</h3>
+                        <p class="mb-4 text-gray-600">A escolha mais segura e conveniente, garantindo uma aplicação perfeita com produtos de alta performance e sem riscos para você.</p>
+                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Segurança e tranquilidade garantidas.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Expertise na aplicação para um resultado perfeito.</li>
+                             <li class="flex"><span class="mr-2 text-green-500">✔</span> Uso de equipamentos e produtos adequados.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Custo mais elevado (R$200 - R$400 em média).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guia-compras" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Guia de Compras Interativo</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Explore as principais marcas e visualize a faixa de preço média dos produtos. Use os filtros para refinar sua busca.</p>
+                </div>
+                <div class="flex justify-center mb-8 space-x-2 md:space-x-4">
+                    <button class="filter-btn btn-primary font-semibold py-2 px-4 rounded-full text-sm md:text-base" data-filter="todos">Todos</button>
+                    <button class="filter-btn btn-secondary font-semibold py-2 px-4 rounded-full text-sm md:text-base" data-filter="Água">À Base de Água</button>
+                    <button class="filter-btn btn-secondary font-semibold py-2 px-4 rounded-full text-sm md:text-base" data-filter="Solvente">Base Solvente</button>
+                </div>
+                <div class="card p-4 md:p-8">
+                    <div class="chart-container">
+                        <canvas id="priceChart"></canvas>
+                    </div>
+                </div>
+                <!-- Nova seção de links de produtos -->
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mt-12 mb-4 text-center">Encontre os Produtos Online</h3>
+                <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Cards de produtos serão inseridos aqui pelo JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section id="recomendacao" class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossa Recomendação Final</h2>
+                <div class="max-w-4xl mx-auto space-y-8 md:flex md:space-y-0 md:space-x-8">
+                    <div class="md:w-1/2 card p-8 border-green-500 bg-green-50">
+                        <h3 class="text-xl font-bold text-green-800 mb-3">Para quem busca Economia com Segurança (DIY)</h3>
+                        <p class="text-gray-700">Opte **exclusivamente** por impermeabilizantes **à base de água**. Marcas como <strong class="font-semibold">Easytech (Pro Imper)</strong> e <strong class="font-semibold">Lótus (Acqua-pro)</strong> são excelentes escolhas. A economia é grande, mas sua segurança não pode ser negociada. Siga sempre as instruções do fabricante.</p>
+                    </div>
+                    <div class="md:w-1/2 card p-8 border-blue-500 bg-blue-50">
+                        <h3 class="text-xl font-bold text-blue-800 mb-3">Para quem busca Tranquilidade e Perfeição</h3>
+                        <p class="text-gray-700">**Contrate um serviço profissional**. O investimento é maior, mas você terá a garantia de um trabalho bem executado, com produtos seguros e sem nenhuma dor de cabeça. É a opção mais cômoda e que garante o melhor resultado final.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-fazer" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Como Fazer na Prática</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-3xl mx-auto">Veja o processo de impermeabilização em ação. Assista aos vídeos abaixo para entender a aplicação e o resultado final.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Video 1 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/t0CWt_K87Jc"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/xY0kbbmIf54" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Bk5fPON9YjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/OWqC8-p-jT0"" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Guia Sofá Protegido. Uma aplicação interativa para decisões mais seguras.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            const productTypeButtons = document.querySelectorAll('.product-type-btn');
+            const productContents = document.querySelectorAll('.product-content');
+
+            productTypeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    productTypeButtons.forEach(btn => {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-secondary');
+                    });
+                    button.classList.add('btn-primary');
+                    button.classList.remove('btn-secondary');
+
+                    const targetId = `content-${button.id.split('-')[1]}`;
+                    productContents.forEach(content => {
+                        if (content.id === targetId) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            const productData = [
+                { marca: 'Easytech Pro Imper', base: 'Água', precoMin: 150, precoMax: 220, volume: '5L', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/easytech-pro-imper', amazonUrl: 'https://www.amazon.com.br/s?k=easytech+pro+imper' },
+                { marca: 'Lótus Acqua-pro', base: 'Água', precoMin: 150, precoMax: 200, volume: '5L', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/lotus-acqua-pro', amazonUrl: 'https://www.amazon.com.br/s?k=lotus+acqua-pro' },
+                { marca: 'Protelim Prot Water Guard', base: 'Água', precoMin: 220, precoMax: 330, volume: '5L', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/protelim-prot-water-guard', amazonUrl: 'https://www.amazon.com.br/s?k=protelim+prot+water+guard' },
+                { marca: 'Dry Limp Blindagem', base: 'Água', precoMin: 70, precoMax: 120, volume: '500ml', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/dry-limp-blindagem', amazonUrl: 'https://www.amazon.com.br/s?k=dry+limp+blindagem' },
+                { marca: 'Spartan Spartagard', base: 'Água', precoMin: 270, precoMax: 280, volume: '5L', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/spartan-spartagard', amazonUrl: 'https://www.amazon.com.br/s?k=spartan+spartagard' },
+                { marca: 'Vonixx Impermax', base: 'Solvente', precoMin: 160, precoMax: 170, volume: '1,5L', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/vonixx-impermax', amazonUrl: 'https://www.amazon.com.br/s?k=vonixx+impermax' },
+                { marca: 'Lótus Safe', base: 'Solvente', precoMin: 320, precoMax: 350, volume: '5L', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/lótus-safe-impermeabilizante', amazonUrl: 'https://www.amazon.com.br/s?k=lótus+safe+impermeabilizante' },
+                { marca: 'Color Brilho Solv', base: 'Solvente', precoMin: 370, precoMax: 380, volume: '5L', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/color-brilho-solv', amazonUrl: 'https://www.amazon.com.br/s?k=color+brilho+solv' },
+                { marca: 'Easytech Pro Imper (P)', base: 'Água', precoMin: 45, precoMax: 50, volume: '500ml', mercadoLivreUrl: 'https://lista.mercadolivre.com.br/easytech-pro-imper-500ml', amazonUrl: 'https://www.amazon.com.br/s?k=easytech+pro+imper+500ml' },
+            ];
+
+            const ctx = document.getElementById('priceChart').getContext('2d');
+            let priceChart;
+
+            function createChart(data) {
+                if (priceChart) {
+                    priceChart.destroy();
+                }
+
+                const backgroundColors = data.map(p => {
+                    if (p.base === 'Água') return 'rgba(74, 144, 226, 0.7)';
+                    if (p.base === 'Solvente') return 'rgba(217, 30, 24, 0.7)';
+                    return 'rgba(155, 155, 155, 0.7)';
+                });
+
+                const borderColors = data.map(p => {
+                    if (p.base === 'Água') return 'rgba(74, 144, 226, 1)';
+                    if (p.base === 'Solvente') return 'rgba(217, 30, 24, 1)';
+                    return 'rgba(155, 155, 155, 1)';
+                });
+
+                priceChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: data.map(p => `${p.marca} (${p.volume})`),
+                        datasets: [{
+                            label: 'Preço Médio (R$)',
+                            data: data.map(p => (p.precoMin + p.precoMax) / 2),
+                            backgroundColor: backgroundColors,
+                            borderColor: borderColors,
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        indexAxis: 'y',
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                title: {
+                                    display: true,
+                                    text: 'Preço Médio (R$)'
+                                }
+                            },
+                             y: {
+                                ticks: {
+                                    autoSkip: false,
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        const index = context.dataIndex;
+                                        const point = data[index];
+                                        return `Faixa de Preço: R$${point.precoMin.toFixed(2)} - R$${point.precoMax.toFixed(2)}`;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            function renderProductList(data) {
+                const productListContainer = document.getElementById('product-list');
+                productListContainer.innerHTML = '';
+                
+                data.forEach(product => {
+                    const card = document.createElement('div');
+                    card.className = 'card p-6 flex flex-col justify-between';
+                    
+                    const baseClass = product.base === 'Água' ? 'text-blue-500' : (product.base === 'Solvente' ? 'text-red-500' : 'text-gray-500');
+                    
+                    card.innerHTML = `
+                        <div>
+                            <h4 class="text-xl font-bold mb-1">${product.marca}</h4>
+                            <p class="text-gray-600 mb-2">${product.volume} - R$${product.precoMin.toFixed(2)} a R$${product.precoMax.toFixed(2)}</p>
+                            <p class="font-semibold text-sm ${baseClass}">Base: ${product.base}</p>
+                        </div>
+                        <div class="mt-4 flex flex-col space-y-2">
+                            <a href="${product.mercadoLivreUrl}" target="_blank" class="w-full text-center btn-primary font-semibold py-2 px-4 rounded-full text-sm">Comprar no Mercado Livre</a>
+                            <a href="${product.amazonUrl}" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-sm">Comprar na Amazon</a>
+                        </div>
+                    `;
+                    productListContainer.appendChild(card);
+                });
+            }
+
+            createChart(productData);
+            renderProductList(productData);
+
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-secondary');
+                    });
+                    button.classList.add('btn-primary');
+                    button.classList.remove('btn-secondary');
+
+                    const filter = button.dataset.filter;
+                    let filteredData = productData.filter(p => p.base === filter);
+                    if (filter === 'todos') {
+                        filteredData = productData;
+                    }
+                    createChart(filteredData);
+                    renderProductList(filteredData);
+                });
+            });
+
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>
