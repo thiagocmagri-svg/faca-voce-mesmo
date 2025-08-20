@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://thiagocmagri-svg.github.io/faca-voce-mesmo/sitemap.xml
