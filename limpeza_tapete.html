@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Interativo de Limpeza de Tapetes - DIY</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guia completo para limpeza de tapetes. Aprenda técnicas profissionais, produtos específicos para diferentes tipos de tapetes e como remover manchas difíceis.">
+    <meta name="keywords" content="limpeza de tapete, como limpar tapete, limpeza profissional tapete, extração tapete, produtos para tapete, extratora, tira-manchas tapete">
+    <meta name="author" content="Guia Limpeza Tapetes">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Guia Interativo de Limpeza de Tapetes">
+    <meta property="og:description" content="Aprenda sobre o processo profissional de limpeza de tapetes, desde a aspiração até a extração, e os produtos que fazem a diferença.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/guia-limpeza-tapete">
+    <meta property="og:locale" content="pt_BR">
+    <!-- End SEO Meta Tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm Neutral Background */
+            color: #4A4A4A;
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #6B8E23; /* Sage Accent */
+            border-bottom-color: #6B8E23;
+        }
+        .btn-primary {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #55711c;
+        }
+        .btn-secondary {
+            background-color: #EAE7E2;
+            color: #6B8E23;
+            transition: background-color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #DCD8D1;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #EAE7E2;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        .step-link.active {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <span class="text-[#6B8E23]">Guia</span> de Limpeza de Tapetes
+            </div>
+            <div class="hidden md:flex space-x-8">
+			    <a href="./index.html" class="nav-link text-blue-800 font-medium pb-1 border-b-2 border-transparent">Índice dos Guias</a>
+                <a href="#beneficios" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Por que Limpar?</a>
+                <a href="#processo" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">O Processo</a>
+                <a href="#produtos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Produtos</a>
+                <a href="#diy-vs-pro" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">DIY vs. Profissional</a>
+                <a href="#videos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Vídeos</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <span class="text-3xl">☰</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="./index.html" class="block nav-link text-blue-800 font-medium">Índice dos Guias</a>
+            <a href="#beneficios" class="block nav-link text-gray-600 font-medium">Por que Limpar?</a>
+            <a href="#processo" class="block nav-link text-gray-600 font-medium">O Processo</a>
+            <a href="#produtos" class="block nav-link text-gray-600 font-medium">Produtos</a>
+            <a href="#diy-vs-pro" class="block nav-link text-gray-600 font-medium">DIY vs. Profissional</a>
+            <a href="#videos" class="block nav-link text-gray-600 font-medium">Vídeos</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-4">Aprenda a Limpar seus Tapetes de Forma Profissional.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Este guia interativo ensina as técnicas profissionais de limpeza de tapetes, desde a identificação do tipo de fibra até a extração completa de sujeira e manchas.</p>
+                <a href="#processo" class="btn-primary font-bold py-3 px-8 rounded-full text-lg">Começar a Explorar</a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Por que a Limpeza Profissional é Essencial?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Tapetes acumulam mais sujeira do que você imagina. Veja por que uma limpeza adequada faz toda a diferença.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🦠</div>
+                        <h3 class="text-xl font-bold mb-2">Elimina Ácaros e Bactérias</h3>
+                        <p class="text-gray-600">Tapetes são o habitat favorito dos ácaros. A limpeza profunda elimina 99% dos microrganismos, prevenindo alergias e problemas respiratórios.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">💨</div>
+                        <h3 class="text-xl font-bold mb-2">Remove Odores Profundos</h3>
+                        <p class="text-gray-600">Aspiração comum não remove odores impregnados nas fibras. A extração profissional elimina odores de animais, mofo e outras fontes.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🎨</div>
+                        <h3 class="text-xl font-bold mb-2">Restaura Cores e Textura</h3>
+                        <p class="text-gray-600">A sujeira acumulada deixa as cores opacas e as fibras rígidas. A limpeza adequada revive as cores originais e a maciez do tapete.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processo" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">O Processo Profissional de Limpeza</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Entenda cada etapa da limpeza profissional, adaptada para diferentes tipos de tapetes.</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 max-w-5xl mx-auto">
+                    <!-- Navigation/Steps -->
+                    <div class="md:w-1/3 flex md:flex-col space-x-2 md:space-x-0 md:space-y-4 mb-8 md:mb-0 overflow-x-auto pb-4 md:pb-0">
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap active" data-step="1">1. Identificação</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="2">2. Aspiração</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="3">3. Pré-tratamento</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="4">4. Aplicação</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="5">5. Extração</button>
+                    </div>
+                    <!-- Content -->
+                    <div class="md:w-2/3 card p-6 md:p-8">
+                        <div id="step-1" class="step-content">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 1: Identificação do Tipo de Tapete</h3>
+                            <p class="text-gray-600 mb-4">Antes de qualquer limpeza, é crucial identificar o tipo de fibra e construção do tapete. Tapetes persas, sintéticos, lã ou algodão requerem tratamentos diferentes. Esta etapa define quais produtos e técnicas usar.</p>
+                            <p class="text-gray-600 mb-4"><strong>Teste de fibra:</strong> Retire uma pequena fibra e teste com fogo. Fibras naturais queimam como cabelo, sintéticas derretem como plástico.</p>
+                            <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Lupa, isqueiro, pequena amostra de fibra.
+                            <br><strong>Estimativa de Custo:</strong> Gratuito (usando materiais domésticos).
+                            </p>
+                        </div>
+                        <div id="step-2" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 2: Aspiração Completa</h3>
+                            <p class="text-gray-600 mb-4">A aspiração deve ser feita em ambos os lados do tapete. Use movimentos lentos e sobrepostos, prestando atenção especial às bordas e franjas. Para tapetes com pelo longo, aspire no sentido contrário ao pelo primeiro, depois a favor.</p>
+                            <p class="text-gray-600 mb-4"><strong>Dica importante:</strong> Nunca aspire franjas com o rolo giratório ligado - use apenas a sucção para evitar danos.</p>
+                             <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Aspirador de pó com regulagem de potência, bocais específicos para tapete.
+                            <br><strong>Estimativa de Custo:</strong> R$ 300,00 - R$ 1.200,00 (aspirador de qualidade).
+                            <br><a href="https://lista.mercadolivre.com.br/aspirador-de-po-tapete" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Aspirador para tapetes no Mercado Livre</a> | 
+                            <a href="https://www.amazon.com.br/s?k=aspirador+tapete" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Aspirador para tapetes na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-3" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 3: Pré-tratamento de Manchas</h3>
+                            <p class="text-gray-600 mb-4">Identifique e trate manchas específicas antes da limpeza geral. Manchas orgânicas (sangue, urina) precisam de enzimas, enquanto manchas oleosas requerem solventes específicos. Aplique o produto e deixe agir conforme orientação do fabricante.</p>
+                            <p class="text-gray-600 mb-4"><strong>Regra de ouro:</strong> Sempre teste o produto em uma área pequena e escondida antes de aplicar na mancha visível.</p>
+                             <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Tira-manchas específicos, panos brancos, pulverizador.
+                            <br><strong>Estimativa de Custo:</strong> R$ 25,00 - R$ 80,00 (por produto).
+                            <br><a href="https://lista.mercadolivre.com.br/tira-manchas-tapete" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Tira-manchas para tapete no Mercado Livre</a> | 
+                            <a href="https://www.amazon.com.br/s?k=tira+manchas+tapete" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Tira-manchas para tapete na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-4" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 4: Aplicação do Shampoo</h3>
+                            <p class="text-gray-600 mb-4">Aplique o shampoo específico para tapetes uniformemente sobre toda a superfície. Use um pulverizador para distribuição homogênea. A quantidade deve ser suficiente para umidificar sem encharcar - o excesso pode causar mofo.</p>
+                            <p class="text-gray-600 mb-4">Trabalhe o produto com escova de cerdas macias em movimentos circulares, sempre no sentido do pelo do tapete.</p>
+                             <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Shampoo para tapetes, pulverizador, escova de cerdas macias.
+                            <br><strong>Estimativa de Custo:</strong> Shampoo: R$ 30,00 - R$ 120,00. Escova: R$ 20,00 - R$ 60,00.
+                            <br><a href="https://lista.mercadolivre.com.br/shampoo-tapete-carpete" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Shampoo para tapetes no Mercado Livre</a> | 
+                            <a href="https://www.amazon.com.br/s?k=shampoo+tapete+carpete" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Shampoo para tapetes na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-5" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 5: Extração (A Etapa Decisiva)</h3>
+                            <p class="text-gray-600 mb-4 font-bold">Esta é a etapa que define o sucesso da limpeza.</p>
+                            <p class="text-gray-600 mb-4">A máquina extratora injeta água limpa e simultaneamente aspira a água suja com toda a sujeira e resíduo de produto. Faça movimentos lentos e sobrepostos, garantindo que toda a umidade seja removida.</p>
+                            <p class="text-gray-600 mb-4"><strong>Extração completa:</strong> Continue até que a água aspirada saia limpa. Tapetes mal extraídos desenvolvem mofo e atraem sujeira rapidamente.</p>
+                             <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Extratora de tapetes ou aspirador de líquidos com função de injeção.
+                            <br><strong>Estimativa de Custo:</strong> R$ 1.800,00 - R$ 4.500,00 (extratora profissional).
+                            <br><a href="https://lista.mercadolivre.com.br/extratora-tapetes-wap" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Extratora de tapetes no Mercado Livre</a> | 
+                            <a href="https://www.amazon.com.br/s?k=extratora+tapetes" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Extratora de tapetes na Amazon</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Os Produtos Essenciais</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Cada tipo de sujeira e fibra requer produtos específicos. Conheça os melhores do mercado.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    
+                    <!-- Shampoos para Tapetes Section -->
+                    <div class="card p-6 col-span-full">
+                        <h3 class="text-xl font-bold mb-2 text-center">Shampoos para Limpeza Geral</h3>
+                        <p class="text-gray-600 text-center mb-4">Produtos específicos para cada tipo de fibra e nível de sujeira. Fórmulas concentradas com alto rendimento.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">WAP Tapetes e Carpetes</h4>
+                                <p class="text-sm text-gray-600">Shampoo concentrado específico para extratoras WAP. Fórmula biodegradável que remove sujeira pesada sem deixar resíduos.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio por litro: R$ 45,00 - R$ 65,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/wap-shampoo-tapetes-carpetes" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=wap+shampoo+tapetes" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Karcher Shampoo RM 519</h4>
+                                <p class="text-sm text-gray-600">Produto alemão de alta performance. Ideal para tapetes de fibras naturais e sintéticas. Secagem rápida e sem resíduos.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio por litro: R$ 55,00 - R$ 85,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/karcher-rm-519-shampoo" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=karcher+rm+519" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Easytech Shampoo Neutro</h4>
+                                <p class="text-sm text-gray-600">Fórmula neutra ideal para tapetes delicados e persas. Remove sujeira sem alterar cores ou danificar fibras naturais.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio por litro: R$ 38,00 - R$ 58,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/easytech-shampoo-neutro-tapete" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=easytech+shampoo+neutro" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Bissell Tapete Premium</h4>
+                                <p class="text-sm text-gray-600">Shampoo americano com tecnologia anti-redeposição. Evita que a sujeira retorne rapidamente após a limpeza.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio por litro: R$ 65,00 - R$ 95,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/bissell-shampoo-tapete" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=bissell+shampoo+tapete" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Spartan Carpet Clean</h4>
+                                <p class="text-sm text-gray-600">Concentrado profissional com ação desodorizante. Remove odores profundos enquanto limpa, ideal para casas com pets.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio por litro: R$ 42,00 - R$ 68,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/spartan-carpet-clean" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=spartan+carpet+clean" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Vonder Limpa Carpetes</h4>
+                                <p class="text-sm text-gray-600">Produto nacional com ótimo custo-benefício. Eficaz na remoção de sujeira comum e com fragrância duradoura.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio por litro: R$ 28,00 - R$ 45,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/vonder-limpa-carpetes" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=vonder+limpa+carpetes" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tira-Manchas Específicos Section -->
+                    <div class="card p-6 col-span-full mt-8">
+                        <h3 class="text-xl font-bold mb-2 text-center">Tira-Manchas Específicos</h3>
+                        <p class="text-gray-600 text-center mb-4">Para manchas persistentes que o shampoo comum não remove. Cada tipo de mancha requer um produto específico.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Vanish Oxi Action Tapetes</h4>
+                                <p class="text-sm text-gray-600">Removedor de manchas orgânicas com oxigênio ativo. Eficaz contra sangue, suor, urina e outras manchas proteicas.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 25,00 - R$ 40,00 (500ml)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/vanish-oxi-action-tapetes" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=vanish+oxi+action+tapetes" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Resolve Pet Stain</h4>
+                                <p class="text-sm text-gray-600">Especializado em manchas e odores de animais. Contém enzimas que quebram as proteínas da urina, eliminando odor permanentemente.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 35,00 - R$ 55,00 (650ml)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/resolve-pet-stain-remover" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=resolve+pet+stain" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Karcher Spot Cleaner</h4>
+                                <p class="text-sm text-gray-600">Removedor de manchas de gordura e óleo. Ideal para manchas de comida, maquiagem e outras substâncias oleosas.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 45,00 - R$ 70,00 (500ml)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/karcher-spot-cleaner" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=karcher+spot+cleaner" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Easytech Tira Manchas Pro</h4>
+                                <p class="text-sm text-gray-600">Removedor profissional multiuso. Eficaz contra vinho, café, chocolate e manchas mistas. Não altera cores do tecido.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 38,00 - R$ 58,00 (1L)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/easytech-tira-manchas-pro" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=easytech+tira+manchas+pro" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">OxiClean MaxForce</h4>
+                                <p class="text-sm text-gray-600">Removedor americano de alta potência. Remove até manchas antigas e incrustadas com segurança para fibras coloridas.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 42,00 - R$ 68,00 (354ml)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/oxiclean-maxforce" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=oxiclean+maxforce" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desodorizantes Section -->
+                    <div class="card p-6 col-span-full mt-8">
+                        <h3 class="text-xl font-bold mb-2 text-center">Desodorizantes e Neutralizadores</h3>
+                        <p class="text-gray-600 text-center mb-4">Produtos finalizadores que eliminam odores e deixam fragrância duradoura, completando o processo de higienização.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Febreze Fabric Refresher</h4>
+                                <p class="text-sm text-gray-600">Neutralizador molecular de odores. Elimina odores em vez de mascará-los, deixando fragrância fresca e duradoura.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 18,00 - R$ 28,00 (370ml)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/febreze-fabric-refresher" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=febreze+fabric+refresher" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Centralsul Eliminador Pet</h4>
+                                <p class="text-sm text-gray-600">Especializado em odores de animais. Fórmula enzimática que decompõe as moléculas causadoras do mau cheiro de forma permanente.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 32,00 - R$ 52,00 (1L)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/centralsul-eliminador-pet" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=centralsul+eliminador+pet" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">WAP Carpet Fresh</h4>
+                                <p class="text-sm text-gray-600">Desodorizante pós-limpeza com ação bactericida. Protege contra germes e mantém o tapete com aroma agradável por semanas.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 28,00 - R$ 48,00 (500ml)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/wap-carpet-fresh" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=wap+carpet+fresh" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diy-vs-pro" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Limpeza: Você Mesmo ou Profissional?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Compare as vantagens e limitações de cada abordagem para fazer a melhor escolha.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">🏠 Faça Você Mesmo (DIY)</h3>
+                        <p class="mb-4 text-gray-600">Uma opção econômica para manutenção regular, mas requer investimento inicial em equipamentos e cuidados especiais com tapetes valiosos.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Economia significativa a longo prazo.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Controle total do processo e produtos.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Flexibilidade de horário.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Investimento inicial alto (extratora R$ 1.800+).</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Risco de danos em tapetes caros ou delicados.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Processo trabalhoso e demorado.</li>
+                        </ul>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">👨‍🔧 Serviço Profissional</h3>
+                        <p class="mb-4 text-gray-600">A escolha mais segura, especialmente para tapetes de valor, persas ou com manchas complexas. Garantia de resultado e proteção do investimento.</p>
+                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Expertise em diferentes tipos de fibras.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Equipamentos profissionais de alta potência.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Garantia contra danos.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Produtos específicos para cada situação.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Custo por limpeza: R$ 15,00 - R$ 35,00 por m².</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Dependência de agendamento.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Veja o Processo na Prática</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-3xl mx-auto">Assista aos vídeos para entender melhor as técnicas e ver os resultados impressionantes da limpeza profissional de tapetes.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Video 1 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/k8F0Ml6CRZ8" title="Limpeza de Tapete - Processo Completo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Limpeza Profissional Completa</h4>
+                            <p class="text-gray-600 text-sm">Veja todo o processo de limpeza profissional, desde a identificação da sujeira até o resultado final impressionante.</p>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/JHnPS6rnFFE" title="Como Usar Extratora de Tapetes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Usando Extratora Corretamente</h4>
+                            <p class="text-gray-600 text-sm">Tutorial prático sobre como usar uma extratora de tapetes para obter os melhores resultados em casa.</p>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/kCnLOQqXY1I" title="Removendo Manchas de Tapetes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Técnicas de Remoção de Manchas</h4>
+                            <p class="text-gray-600 text-sm">Aprenda técnicas específicas para diferentes tipos de manchas e como tratá-las adequadamente.</p>
+                        </div>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/qZGmEHuic7o" title="Limpeza DIY de Tapetes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Limpeza DIY Passo a Passo</h4>
+                            <p class="text-gray-600 text-sm">Guia completo para quem quer fazer a limpeza em casa, com dicas de segurança e melhores práticas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Guia de Limpeza de Tapetes. Feito para você fazer com segurança e qualidade!</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Step navigation
+            const stepButtons = document.querySelectorAll('.step-link');
+            const stepContents = document.querySelectorAll('.step-content');
+
+            stepButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    stepButtons.forEach(btn => {
+                        btn.classList.remove('active', 'btn-primary');
+                        btn.classList.add('btn-secondary');
+                    });
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active', 'btn-primary');
+                    button.classList.remove('btn-secondary');
+
+                    // Hide all step contents
+                    stepContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+
+                    // Show the corresponding step content
+                    const stepNumber = button.dataset.step;
+                    const targetContent = document.getElementById(`step-${stepNumber}`);
+                    if (targetContent) {
+                        targetContent.classList.remove('hidden');
+                    }
+                });
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Active navigation highlighting
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

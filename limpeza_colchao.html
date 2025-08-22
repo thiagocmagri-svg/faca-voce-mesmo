@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Interativo de Limpeza de Colchão - Higienização e Remoção de Ácaros</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guia completo para limpeza de colchão. Aprenda técnicas profissionais de higienização, remoção de ácaros, manchas e odores para uma noite de sono mais saudável.">
+    <meta name="keywords" content="limpeza de colchão, como limpar colchão, remoção de ácaros, higienização colchão, manchas no colchão, bicarbonato colchão, aspirador colchão">
+    <meta name="author" content="Guia Limpeza Colchão">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Guia Interativo de Limpeza de Colchão">
+    <meta property="og:description" content="Aprenda técnicas profissionais para manter seu colchão limpo, livre de ácaros e com um sono mais saudável.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/guia-limpeza-colchao">
+    <meta property="og:locale" content="pt_BR">
+    <!-- End SEO Meta Tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm Neutral Background */
+            color: #4A4A4A;
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #6B8E23; /* Sage Accent */
+            border-bottom-color: #6B8E23;
+        }
+        .btn-primary {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #55711c;
+        }
+        .btn-secondary {
+            background-color: #EAE7E2;
+            color: #6B8E23;
+            transition: background-color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #DCD8D1;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #EAE7E2;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        .step-link.active {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <span class="text-[#6B8E23]">Guia</span> de Limpeza de Colchão
+            </div>
+            <div class="hidden md:flex space-x-8">
+			    <a href="./index.html" class="nav-link text-blue-800 font-medium pb-1 border-b-2 border-transparent">Índice dos Guias</a>
+                <a href="#beneficios" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Por que Limpar?</a>
+                <a href="#processo" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">O Processo</a>
+                <a href="#produtos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Produtos</a>
+                <a href="#diy-vs-pro" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">DIY vs. Profissional</a>
+                <a href="#videos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Vídeos</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <span class="text-3xl">☰</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="./index.html" class="block nav-link text-blue-800 font-medium">Índice dos Guias</a>
+            <a href="#beneficios" class="block nav-link text-gray-600 font-medium">Por que Limpar?</a>
+            <a href="#processo" class="block nav-link text-gray-600 font-medium">O Processo</a>
+            <a href="#produtos" class="block nav-link text-gray-600 font-medium">Produtos</a>
+            <a href="#diy-vs-pro" class="block nav-link text-gray-600 font-medium">DIY vs. Profissional</a>
+            <a href="#videos" class="block nav-link text-gray-600 font-medium">Vídeos</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-4">Transforme seu Sono com um Colchão Limpo e Saudável.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Este guia interativo ensina as técnicas profissionais para higienizar seu colchão, eliminar ácaros e garantir noites de sono mais saudáveis para toda a família.</p>
+                <a href="#processo" class="btn-primary font-bold py-3 px-8 rounded-full text-lg">Começar a Explorar</a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Por que a Limpeza de Colchão é Essencial?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Mais do que aparência, é uma questão de saúde e qualidade do sono.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🦠</div>
+                        <h3 class="text-xl font-bold mb-2">Elimina Ácaros e Bactérias</h3>
+                        <p class="text-gray-600">Remove milhões de ácaros, bactérias e fungos que se acumulam no colchão, prevenindo alergias, rinites e problemas respiratórios.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">😴</div>
+                        <h3 class="text-xl font-bold mb-2">Melhora a Qualidade do Sono</h3>
+                        <p class="text-gray-600">Um colchão limpo e livre de odores proporciona um ambiente mais saudável para dormir, melhorando significativamente a qualidade do seu descanso.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">⏰</div>
+                        <h3 class="text-xl font-bold mb-2">Prolonga a Vida Útil</h3>
+                        <p class="text-gray-600">A limpeza regular remove sujeiras e óleos corporais que deterioram os materiais, aumentando a durabilidade do colchão em até 5 anos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processo" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">O Processo Profissional de Limpeza</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Siga este passo a passo para uma limpeza eficaz e segura do seu colchão.</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 max-w-5xl mx-auto">
+                    <!-- Navigation/Steps -->
+                    <div class="md:w-1/3 flex md:flex-col space-x-2 md:space-x-0 md:space-y-4 mb-8 md:mb-0 overflow-x-auto pb-4 md:pb-0">
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap active" data-step="1">1. Preparação</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="2">2. Aspiração</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="3">3. Tratamento</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="4">4. Desodorização</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="5">5. Secagem</button>
+                    </div>
+                    <!-- Content -->
+                    <div class="md:w-2/3 card p-6 md:p-8">
+                        <div id="step-1" class="step-content">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 1: Preparação do Ambiente</h3>
+                            <p class="text-gray-600 mb-4">Retire todas as roupas de cama, travesseiros e protetores. Certifique-se de que o ambiente esteja bem ventilado. Esta é uma etapa fundamental para garantir que toda a superfície do colchão seja devidamente tratada.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Luvas de borracha, máscara (opcional).
+                                <br><strong>Tempo Estimado:</strong> 5-10 minutos.
+                                <br><strong>Dica Importante:</strong> Abra janelas para garantir ventilação durante todo o processo.
+                            </p>
+                        </div>
+                        <div id="step-2" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 2: Aspiração Profunda</h3>
+                            <p class="text-gray-600 mb-4">Aspire toda a superfície do colchão, incluindo costuras, bordas e cantos. Use movimentos lentos e sobreponha as passadas. Vire o colchão e repita o processo do outro lado. Esta etapa remove poeira, pelos, pele morta e ácaros.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Aspirador de pó potente com bico de estofado.
+                                <br><strong>Estimativa de Custo:</strong> R$ 300,00 - R$ 800,00 (aspirador).
+                                <br><a href="https://lista.mercadolivre.com.br/aspirador-de-po-bico-estofado" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Aspirador no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=aspirador+de+po+bico+estofado" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Aspirador na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-3" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 3: Tratamento com Bicarbonato</h3>
+                            <p class="text-gray-600 mb-4">Espalhe bicarbonato de sódio uniformemente sobre toda a superfície do colchão. O bicarbonato absorve odores, umidade e ajuda a eliminar ácaros. Deixe agir por pelo menos 30 minutos (idealmente 2-3 horas) antes de aspirar novamente.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> 1-2 xícaras de bicarbonato de sódio, peneira fina (opcional).
+                                <br><strong>Estimativa de Custo:</strong> R$ 3,00 - R$ 8,00 (bicarbonato).
+                                <br><a href="https://lista.mercadolivre.com.br/bicarbonato-de-sodio" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Bicarbonato no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=bicarbonato+de+sodio" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Bicarbonato na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-4" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 4: Desodorização e Higienização</h3>
+                            <p class="text-gray-600 mb-4">Após aspirar o bicarbonato, aplique um spray desodorizante e anti-ácaros específico para colchões. Pulverize de forma uniforme mantendo distância de 20cm. Este produto elimina bactérias remanescentes e deixa um aroma fresco.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Spray anti-ácaros ou desodorizante para colchão.
+                                <br><strong>Estimativa de Custo:</strong> R$ 15,00 - R$ 45,00 (spray).
+                                <br><a href="https://lista.mercadolivre.com.br/spray-anti-acaros-colchao" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Spray anti-ácaros no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=spray+anti+acaros+colchao" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Spray anti-ácaros na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-5" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 5: Secagem e Finalização</h3>
+                            <p class="text-gray-600 mb-4">Deixe o colchão secar completamente antes de recolocar a roupa de cama. Se possível, exponha à luz solar indireta ou use ventilador para acelerar a secagem. O colchão deve estar completamente seco para evitar mofo e fungos.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Tempo de Secagem:</strong> 2-6 horas (dependendo da umidade do ambiente).
+                                <br><strong>Dica Profissional:</strong> Use um ventilador direcionado ao colchão para acelerar o processo.
+                                <br><strong>Frequência Recomendada:</strong> Repita este processo a cada 3-6 meses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Produtos Essenciais para Limpeza</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Conheça os produtos indispensáveis para uma limpeza completa e eficaz.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <!-- Produtos Básicos -->
+                    <div class="card p-6 col-span-full">
+                        <h3 class="text-xl font-bold mb-2 text-center">Produtos Básicos (Essenciais)</h3>
+                        <p class="text-gray-600 text-center mb-4">Itens fundamentais que toda casa deve ter para manutenção regular do colchão.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Bicarbonato de Sódio</h4>
+                                <p class="text-sm text-gray-600">O produto mais eficaz e econômico para absorver odores e eliminar ácaros naturalmente.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 3,00 - R$ 8,00 (1kg)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/bicarbonato-de-sodio-1kg" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=bicarbonato+de+sodio+1kg" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Aspirador de Pó Potente</h4>
+                                <p class="text-sm text-gray-600">Aspirador com pelo menos 1400W e bico específico para estofados. Essencial para remoção de ácaros.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 300,00 - R$ 800,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/aspirador-de-po-1400w-bico-estofado" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=aspirador+de+po+1400w+bico+estofado" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Spray Anti-Ácaros Natural</h4>
+                                <p class="text-sm text-gray-600">Produto específico para eliminação de ácaros e bactérias, preferencialmente com base natural.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 15,00 - R$ 35,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/spray-anti-acaros-natural-colchao" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=spray+anti+acaros+natural+colchao" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produtos Avançados -->
+                    <div class="card p-6 col-span-full mt-8">
+                        <h3 class="text-xl font-bold mb-2 text-center">Produtos Avançados (Para Casos Específicos)</h3>
+                        <p class="text-gray-600 text-center mb-4">Para manchas difíceis, odores persistentes ou limpeza profissional.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Limpador Enzimático</h4>
+                                <p class="text-sm text-gray-600">Específico para manchas orgânicas como urina, sangue ou vômito. Remove odores na origem.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 25,00 - R$ 60,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/limpador-enzimatico-colchao-urina" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=limpador+enzimatico+colchao+urina" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Extratora Portátil</h4>
+                                <p class="text-sm text-gray-600">Para limpeza profunda com água e aspiração. Ideal para manchas difíceis e limpeza completa.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 800,00 - R$ 2.500,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/extratora-portatil-colchao" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=extratora+portatil+colchao" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Luz UV Anti-Ácaros</h4>
+                                <p class="text-sm text-gray-600">Aspirador com luz UV que elimina 99% dos ácaros e bactérias. Tecnologia profissional para casa.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 200,00 - R$ 500,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/aspirador-uv-anti-acaros-colchao" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=aspirador+uv+anti+acaros+colchao" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Capa Protetora Impermeável</h4>
+                                <p class="text-sm text-gray-600">Proteção preventiva contra líquidos, ácaros e sujeira. Facilita a manutenção futura.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 50,00 - R$ 150,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/capa-protetora-colchao-impermeavel" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=capa+protetora+colchao+impermeavel" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diy-vs-pro" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Limpeza: Você Mesmo ou Profissional?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Compare as vantagens de cada abordagem para decidir a melhor opção para seu caso.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">🏠 Faça Você Mesmo (DIY)</h3>
+                        <p class="mb-4 text-gray-600">Ideal para manutenção regular e casos sem manchas graves. Método econômico e eficaz quando feito corretamente.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Muito econômico (R$ 10-30 por limpeza).</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Pode ser feito quando necessário.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Processo simples e seguro.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Limitado para manchas muito difíceis.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Requer tempo e dedicação pessoal.</li>
+                        </ul>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">👨‍🔧 Serviço Profissional</h3>
+                        <p class="mb-4 text-gray-600">Recomendado para limpeza profunda, manchas difíceis ou quando há problemas graves de ácaros e alergias.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Equipamentos profissionais (extratoras, UV).</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Remove 99% dos ácaros e bactérias.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Resolve casos complexos (urina, mofo).</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Sem esforço físico para você.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Custo mais alto (R$80 - R$200).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Veja as Técnicas na Prática</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-3xl mx-auto">Assista aos vídeos tutoriais para aprender as melhores técnicas de limpeza de colchão e tirar suas dúvidas.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Video 1 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/rCJCqJG8UzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/YM8fDAhQDZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/xCDu4hFOy7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/VphnCnof5_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Guia de Limpeza de Colchão. Para noites mais saudáveis!</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            const stepButtons = document.querySelectorAll('.step-link');
+            const stepContents = document.querySelectorAll('.step-content');
+
+            stepButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    stepButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    button.classList.add('active');
+
+                    const stepNumber = button.getAttribute('data-step');
+                    stepContents.forEach(content => {
+                        if (content.id === `step-${stepNumber}`) {
+                            content.classList.remove('hidden');
+                        } else {
+                            content.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

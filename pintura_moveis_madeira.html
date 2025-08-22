@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Interativo de Pintura de Móveis de Madeira - DIY</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guia completo para pintura de móveis de madeira. Aprenda técnicas de preparação, aplicação de tintas e vernizes, e como renovar seus móveis com acabamento profissional.">
+    <meta name="keywords" content="pintura de móveis, móveis de madeira, DIY, restauração de móveis, tinta para madeira, verniz, lixamento, primer, renovação móveis">
+    <meta name="author" content="Guia Móveis DIY">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Guia Interativo de Pintura de Móveis de Madeira">
+    <meta property="og:description" content="Aprenda a renovar seus móveis de madeira com técnicas profissionais, desde a preparação até o acabamento final.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/guia-pintura-moveis">
+    <meta property="og:locale" content="pt_BR">
+    <!-- End SEO Meta Tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm Neutral Background */
+            color: #4A4A4A;
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #6B8E23; /* Sage Accent */
+            border-bottom-color: #6B8E23;
+        }
+        .btn-primary {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #55711c;
+        }
+        .btn-secondary {
+            background-color: #EAE7E2;
+            color: #6B8E23;
+            transition: background-color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #DCD8D1;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #EAE7E2;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        .step-link.active {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <span class="text-[#6B8E23]">Guia</span> Pintura de Móveis
+            </div>
+            <div class="hidden md:flex space-x-8">
+			    <a href="./index.html" class="nav-link text-blue-800 font-medium pb-1 border-b-2 border-transparent">Índice dos Guias</a>
+                <a href="#beneficios" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Por que Renovar?</a>
+                <a href="#processo" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">O Processo</a>
+                <a href="#produtos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Produtos</a>
+                <a href="#diy-vs-pro" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">DIY vs. Profissional</a>
+                <a href="#videos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Vídeos</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <span class="text-3xl">☰</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="./index.html" class="block nav-link text-blue-800 font-medium">Índice dos Guias</a>
+            <a href="#beneficios" class="block nav-link text-gray-600 font-medium">Por que Renovar?</a>
+            <a href="#processo" class="block nav-link text-gray-600 font-medium">O Processo</a>
+            <a href="#produtos" class="block nav-link text-gray-600 font-medium">Produtos</a>
+            <a href="#diy-vs-pro" class="block nav-link text-gray-600 font-medium">DIY vs. Profissional</a>
+            <a href="#videos" class="block nav-link text-gray-600 font-medium">Vídeos</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-4">Transforme seus Móveis de Madeira com Pintura Profissional.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Este guia interativo ensina técnicas profissionais de pintura e renovação de móveis de madeira, desde a preparação até o acabamento final perfeito.</p>
+                <a href="#processo" class="btn-primary font-bold py-3 px-8 rounded-full text-lg">Começar a Renovar</a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Por que Renovar seus Móveis de Madeira?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Muito mais do que apenas uma mudança visual - é sustentabilidade e economia.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">💰</div>
+                        <h3 class="text-xl font-bold mb-2">Economia Significativa</h3>
+                        <p class="text-gray-600">Renovar um móvel custa até 80% menos que comprar novo. Um guarda-roupa que custaria R$ 2.000 novo pode ser renovado por apenas R$ 300-400.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🌱</div>
+                        <h3 class="text-xl font-bold mb-2">Sustentabilidade</h3>
+                        <p class="text-gray-600">Evita o descarte desnecessário de móveis em bom estado estrutural, reduzindo o impacto ambiental e contribuindo para a economia circular.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🎨</div>
+                        <h3 class="text-xl font-bold mb-2">Personalização Total</h3>
+                        <p class="text-gray-600">Transforme móveis antigos em peças únicas que combinam perfeitamente com sua decoração atual, criando ambientes exclusivos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processo" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">O Processo Profissional de Pintura</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Cada etapa é fundamental para um resultado duradouro e profissional.</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 max-w-5xl mx-auto">
+                    <!-- Navigation/Steps -->
+                    <div class="md:w-1/3 flex md:flex-col space-x-2 md:space-x-0 md:space-y-4 mb-8 md:mb-0 overflow-x-auto pb-4 md:pb-0">
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap active" data-step="1">1. Avaliação</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="2">2. Lixamento</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="3">3. Limpeza</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="4">4. Primer</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="5">5. Pintura</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="6">6. Acabamento</button>
+                    </div>
+                    <!-- Content -->
+                    <div class="md:w-2/3 card p-6 md:p-8">
+                        <div id="step-1" class="step-content">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 1: Avaliação e Preparação</h3>
+                            <p class="text-gray-600 mb-4">Antes de começar, analise o estado da madeira, identifique o tipo de verniz ou tinta existente e planeje o projeto. Remova ferragens, gavetas e portas quando possível para facilitar o trabalho.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Chaves de fenda, alicate, etiquetas para identificação das peças.
+                                <br><strong>Tempo Estimado:</strong> 30 minutos a 1 hora.
+                                <br><strong>Dica Importante:</strong> Fotografe a montagem antes de desmontar para facilitar a remontagem.
+                            </p>
+                        </div>
+                        <div id="step-2" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 2: Lixamento</h3>
+                            <p class="text-gray-600 mb-4">O lixamento remove o acabamento antigo e cria textura para aderência da nova tinta. Comece com lixa grossa (120) e termine com lixa fina (220). Sempre lixe no sentido das fibras da madeira.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Lixas 120, 180 e 220; Suporte para lixa; Máscara de proteção; Aspirador ou pano.
+                                <br><strong>Tempo Estimado:</strong> 2 a 4 horas (dependendo do tamanho).
+                                <br><a href="https://lista.mercadolivre.com.br/lixa-madeira-120-180-220" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Lixas para madeira no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=lixa+madeira+120+180+220" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Lixas para madeira na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-3" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 3: Limpeza Profunda</h3>
+                            <p class="text-gray-600 mb-4">Remove completamente todo o pó do lixamento. Use aspirador primeiro, depois pano úmido (não molhado) e finalize com pano seco. A superfície deve estar impecável antes da aplicação do primer.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Aspirador de pó; Panos de microfibra; Álcool isopropílico ou desengraxante.
+                                <br><strong>Tempo Estimado:</strong> 30 minutos.
+                                <br><a href="https://lista.mercadolivre.com.br/pano-microfibra-limpeza" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Panos de microfibra no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=pano+microfibra" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Panos de microfibra na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-4" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 4: Aplicação do Primer</h3>
+                            <p class="text-gray-600 mb-4">O primer garante aderência perfeita e uniformidade da cor final. Aplique camada fina e uniforme com pincel ou rolo. Esta etapa é crucial - nunca pule o primer em móveis de madeira.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Primer para madeira; Pincel ou rolo de espuma; Bandeja para tinta.
+                                <br><strong>Tempo de Secagem:</strong> 4 a 6 horas entre demãos.
+                                <br><a href="https://lista.mercadolivre.com.br/primer-madeira-suvinil-coral" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Primer para madeira no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=primer+madeira" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Primer para madeira na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-5" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 5: Aplicação da Tinta</h3>
+                            <p class="text-gray-600 mb-4">Aplique 2-3 demãos finas da tinta, respeitando o tempo de secagem entre elas. Use movimentos longos e uniformes. Tinta esmalte oferece maior durabilidade, enquanto tinta látex é mais fácil de aplicar.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Tinta esmalte ou látex premium; Pincéis de qualidade; Rolo de espuma.
+                                <br><strong>Tempo entre Demãos:</strong> 4 a 8 horas (conforme fabricante).
+                                <br><a href="https://lista.mercadolivre.com.br/tinta-esmalte-suvinil-coral" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Tinta esmalte no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=tinta+esmalte+moveis" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Tinta esmalte na Amazon</a>
+                            </p>
+                        </div>
+                        <div id="step-6" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 6: Acabamento e Proteção</h3>
+                            <p class="text-gray-600 mb-4">Para móveis de uso intenso, aplique verniz acrílico fosco ou acetinado sobre a tinta seca. Isso aumenta drasticamente a durabilidade e facilita a limpeza futura. Lixe levemente entre demãos com lixa 400.</p>
+                            <p class="mt-4 text-gray-500">
+                                <strong>Materiais Necessários:</strong> Verniz acrílico; Lixa 400; Pincel de acabamento.
+                                <br><strong>Tempo de Cura Total:</strong> 7 a 15 dias para resistência máxima.
+                                <br><a href="https://lista.mercadolivre.com.br/verniz-acrilico-suvinil" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Verniz acrílico no Mercado Livre</a> | 
+                                <a href="https://www.amazon.com.br/s?k=verniz+acrilico" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Verniz acrílico na Amazon</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Produtos e Materiais Essenciais</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">A qualidade dos materiais define o resultado final e a durabilidade do projeto.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <!-- Lixas Section -->
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-center">Lixas e Abrasivos</h3>
+                        <div class="space-y-4">
+                            <div class="border-b pb-3">
+                                <h4 class="text-lg font-semibold">Kit Lixas Norton</h4>
+                                <p class="text-sm text-gray-600">Grãos 120, 180 e 220 - Kit completo para lixamento de móveis</p>
+                                <p class="text-sm font-bold mt-2">Preço: R$ 25,00 - R$ 40,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/lixa-norton-120-180-220" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=lixa+norton+kit" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold">Suporte para Lixa</h4>
+                                <p class="text-sm text-gray-600">Facilita o lixamento uniforme e reduz o cansaço</p>
+                                <p class="text-sm font-bold mt-2">Preço: R$ 15,00 - R$ 30,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/suporte-lixa-manual" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=suporte+lixa" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Primer Section -->
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-center">Primers e Fundos</h3>
+                        <div class="space-y-4">
+                            <div class="border-b pb-3">
+                                <h4 class="text-lg font-semibold">Suvinil Primer Madeira</h4>
+                                <p class="text-sm text-gray-600">Primer específico para madeira, excelente aderência</p>
+                                <p class="text-sm font-bold mt-2">900ml: R$ 45,00 - R$ 65,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/suvinil-primer-madeira" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=suvinil+primer+madeira" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold">Coral Primer Universal</h4>
+                                <p class="text-sm text-gray-600">Primer de alta qualidade para diversas superfícies</p>
+                                <p class="text-sm font-bold mt-2">900ml: R$ 40,00 - R$ 55,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/coral-primer-universal" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=coral+primer" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tintas Section -->
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-center">Tintas Premium</h3>
+                        <div class="space-y-4">
+                            <div class="border-b pb-3">
+                                <h4 class="text-lg font-semibold">Suvinil Esmalte Premium</h4>
+                                <p class="text-sm text-gray-600">Esmalte sintético de alta resistência e durabilidade</p>
+                                <p class="text-sm font-bold mt-2">900ml: R$ 65,00 - R$ 85,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/suvinil-esmalte-premium" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=suvinil+esmalte" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold">Coral Esmalte Coralit</h4>
+                                <p class="text-sm text-gray-600">Esmalte de alta performance com proteção antiferruginosa</p>
+                                <p class="text-sm font-bold mt-2">900ml: R$ 60,00 - R$ 80,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/coral-esmalte-coralit" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=coral+coralit" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pincéis e Rolos -->
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-center">Pincéis e Aplicadores</h3>
+                        <div class="space-y-4">
+                            <div class="border-b pb-3">
+                                <h4 class="text-lg font-semibold">Kit Pincéis Condor</h4>
+                                <p class="text-sm text-gray-600">Cerdas sintéticas, tamanhos variados para móveis</p>
+                                <p class="text-sm font-bold mt-2">Kit: R$ 35,00 - R$ 55,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/pincel-condor-kit-moveis" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=pincel+condor+kit" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold">Rolo de Espuma Tigre</h4>
+                                <p class="text-sm text-gray-600">Acabamento liso e uniforme em superfícies planas</p>
+                                <p class="text-sm font-bold mt-2">Rolo: R$ 12,00 - R$ 25,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/rolo-espuma-tigre" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=rolo+espuma+tigre" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vernizes e Acabamentos -->
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-center">Vernizes e Acabamentos</h3>
+                        <div class="space-y-4">
+                            <div class="border-b pb-3">
+                                <h4 class="text-lg font-semibold">Verniz Acrílico Suvinil</h4>
+                                <p class="text-sm text-gray-600">Proteção transparente, fosco ou brilhante</p>
+                                <p class="text-sm font-bold mt-2">900ml: R$ 55,00 - R$ 75,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/verniz-acrilico-suvinil" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=verniz+acrilico+suvinil" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold">Cera Carnaúba Johnson</h4>
+                                <p class="text-sm text-gray-600">Acabamento natural e proteção para madeira</p>
+                                <p class="text-sm font-bold mt-2">200g: R$ 25,00 - R$ 40,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/cera-carnauba-johnson" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=cera+carnauba+madeira" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acessórios -->
+                    <div class="card p-6">
+                        <h3 class="text-xl font-bold mb-4 text-center">Acessórios Essenciais</h3>
+                        <div class="space-y-4">
+                            <div class="border-b pb-3">
+                                <h4 class="text-lg font-semibold">Máscara de Proteção PFF2</h4>
+                                <p class="text-sm text-gray-600">Proteção respiratória contra pó e vapores</p>
+                                <p class="text-sm font-bold mt-2">Pacote 10un: R$ 25,00 - R$ 40,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/mascara-pff2-proteção" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=mascara+pff2" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold">Fita Crepe 3M</h4>
+                                <p class="text-sm text-gray-600">Para proteção e acabamentos precisos</p>
+                                <p class="text-sm font-bold mt-2">Kit: R$ 20,00 - R$ 35,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/fita-crepe-3m" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=fita+crepe+3m" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diy-vs-pro" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Pintura: Você Mesmo ou Profissional?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Compare custos, tempo e qualidade para tomar a melhor decisão.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">🏠 Faça Você Mesmo (DIY)</h3>
+                        <p class="mb-4 text-gray-600">Uma opção econômica que permite total controle sobre o processo, ideal para quem tem tempo e gosta de projetos manuais.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Economia de 60-80% no custo total.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Satisfação pessoal de fazer com as próprias mãos.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Flexibilidade total de horários.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Tempo significativo (3-7 dias de trabalho).</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Necessidade de comprar ferramentas.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Risco de resultado abaixo do esperado.</li>
+                        </ul>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">👨‍🔧 Serviço Profissional</h3>
+                        <p class="mb-4 text-gray-600">Garantia de resultado profissional com rapidez e sem complicações, ideal para quem prioriza tempo e qualidade.</p>
+                         <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Resultado profissional garantido.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Rapidez na execução (1-3 dias).</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Experiência e técnica especializada.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Garantia de serviço.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Custo mais elevado (R$300 - R$800 por móvel).</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Dependência da agenda do profissional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Veja as Técnicas na Prática</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-3xl mx-auto">Assista aos vídeos tutoriais para aprender as técnicas profissionais de pintura e renovação de móveis de madeira.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Video 1 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Como renovar móveis de madeira - Passo a passo completo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Renovação Completa de Móvel de Madeira</h4>
+                            <p class="text-gray-600 text-sm">Tutorial completo mostrando todas as etapas da renovação de um guarda-roupa antigo.</p>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Técnicas de lixamento para móveis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Técnicas Corretas de Lixamento</h4>
+                            <p class="text-gray-600 text-sm">Aprenda a lixar corretamente diferentes tipos de madeira e acabamentos.</p>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Aplicação de primer em móveis de madeira" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Aplicação Profissional de Primer</h4>
+                            <p class="text-gray-600 text-sm">Veja como aplicar o primer corretamente para garantir aderência perfeita da tinta.</p>
+                        </div>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Pintura de móveis com acabamento profissional" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2">Técnicas de Pintura Profissional</h4>
+                            <p class="text-gray-600 text-sm">Aprenda a aplicar tinta e verniz para obter um acabamento impecável e duradouro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Guia Móveis DIY. Transforme sua casa com suas próprias mãos!</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Step navigation functionality
+            const stepLinks = document.querySelectorAll('.step-link');
+            const stepContents = document.querySelectorAll('.step-content');
+
+            stepLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Remove active class from all links
+                    stepLinks.forEach(l => {
+                        l.classList.remove('active', 'btn-primary');
+                        l.classList.add('btn-secondary');
+                    });
+                    
+                    // Add active class to clicked link
+                    link.classList.add('active', 'btn-primary');
+                    link.classList.remove('btn-secondary');
+
+                    // Hide all step contents
+                    stepContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+
+                    // Show selected step content
+                    const stepNumber = link.getAttribute('data-step');
+                    const targetContent = document.getElementById(`step-${stepNumber}`);
+                    if (targetContent) {
+                        targetContent.classList.remove('hidden');
+                    }
+                });
+            });
+
+            // Navigation active link functionality
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>

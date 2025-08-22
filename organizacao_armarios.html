@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Interativo de Organização de Armários - DIY</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Guia completo para organização de armários. Aprenda técnicas profissionais de organização, produtos essenciais e métodos para manter seus armários sempre arrumados.">
+    <meta name="keywords" content="organização de armários, organizar guarda-roupa, arrumação, organização de closet, organizadores, métodos de organização, marie kondo">
+    <meta name="author" content="Guia Organização DIY">
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Guia Interativo de Organização de Armários">
+    <meta property="og:description" content="Aprenda técnicas profissionais para organizar armários de forma eficiente e duradoura.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com/organizacao-armarios">
+    <meta property="og:locale" content="pt_BR">
+    <!-- End SEO Meta Tags -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8; /* Warm Neutral Background */
+            color: #4A4A4A;
+        }
+        .nav-link {
+            transition: color 0.3s, border-bottom-color 0.3s;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #6B8E23; /* Sage Accent */
+            border-bottom-color: #6B8E23;
+        }
+        .btn-primary {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #55711c;
+        }
+        .btn-secondary {
+            background-color: #EAE7E2;
+            color: #6B8E23;
+            transition: background-color 0.3s;
+        }
+        .btn-secondary:hover {
+            background-color: #DCD8D1;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border: 1px solid #EAE7E2;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        .step-link.active {
+            background-color: #6B8E23;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <span class="text-[#6B8E23]">Guia</span> Organização de Armários
+            </div>
+            <div class="hidden md:flex space-x-8">
+			    <a href="./index.html" class="nav-link text-blue-800 font-medium pb-1 border-b-2 border-transparent">Índice dos Guias</a>
+                <a href="#beneficios" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Benefícios</a>
+                <a href="#processo" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">O Processo</a>
+                <a href="#produtos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Produtos</a>
+                <a href="#diy-vs-pro" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">DIY vs. Profissional</a>
+                <a href="#videos" class="nav-link text-gray-600 font-medium pb-1 border-b-2 border-transparent">Vídeos</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <span class="text-3xl">☰</span>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="./index.html" class="block nav-link text-blue-800 font-medium">Índice dos Guias</a>
+            <a href="#beneficios" class="block nav-link text-gray-600 font-medium">Benefícios</a>
+            <a href="#processo" class="block nav-link text-gray-600 font-medium">O Processo</a>
+            <a href="#produtos" class="block nav-link text-gray-600 font-medium">Produtos</a>
+            <a href="#diy-vs-pro" class="block nav-link text-gray-600 font-medium">DIY vs. Profissional</a>
+            <a href="#videos" class="block nav-link text-gray-600 font-medium">Vídeos</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight mb-4">Transforme seus Armários em Espaços Organizados e Funcionais.</h1>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Este guia interativo te ensina técnicas profissionais de organização, desde a triagem de itens até a manutenção da ordem no dia a dia.</p>
+                <a href="#processo" class="btn-primary font-bold py-3 px-8 rounded-full text-lg">Começar a Organizar</a>
+            </div>
+        </section>
+
+        <section id="beneficios" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Por que Organizar seus Armários?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Muito mais que estética, a organização transforma sua rotina e bem-estar.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">⏰</div>
+                        <h3 class="text-xl font-bold mb-2">Economiza Tempo</h3>
+                        <p class="text-gray-600">Encontre qualquer peça em segundos. Reduza o tempo de escolha das roupas em até 70% e tenha manhãs mais tranquilas.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">💰</div>
+                        <h3 class="text-xl font-bold mb-2">Reduz Gastos Desnecessários</h3>
+                        <p class="text-gray-600">Pare de comprar peças repetidas. Com tudo visível e organizado, você conhece melhor seu guarda-roupa e faz compras mais conscientes.</p>
+                    </div>
+                    <div class="card p-8 text-center">
+                        <div class="text-5xl mb-4">🧘</div>
+                        <h3 class="text-xl font-bold mb-2">Reduz o Estresse</h3>
+                        <p class="text-gray-600">Ambientes organizados geram sensação de calma e controle. Diminua a ansiedade e melhore seu bem-estar mental.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="processo" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">O Método Profissional de Organização</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Siga este processo testado para transformar qualquer armário bagunçado em um espaço funcional.</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 max-w-6xl mx-auto">
+                    <!-- Navigation/Steps -->
+                    <div class="md:w-1/3 flex md:flex-col space-x-2 md:space-x-0 md:space-y-4 mb-8 md:mb-0 overflow-x-auto pb-4 md:pb-0">
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap active" data-step="1">1. Esvaziamento</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="2">2. Limpeza</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="3">3. Triagem</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="4">4. Categorização</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="5">5. Organização</button>
+                        <button class="step-link btn-secondary font-bold py-3 px-6 rounded-full whitespace-nowrap" data-step="6">6. Etiquetagem</button>
+                    </div>
+                    <!-- Content -->
+                    <div class="md:w-2/3 card p-6 md:p-8">
+                        <div id="step-1" class="step-content">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 1: Esvaziamento Total</h3>
+                            <p class="text-gray-600 mb-4">Retire absolutamente tudo do armário. Esta etapa é fundamental para ter uma visão completa do que você possui e do espaço disponível. Coloque tudo na cama ou em uma superfície ampla.</p>
+                            <p class="text-gray-600 mb-4"><strong>Dica importante:</strong> Reserve pelo menos 3-4 horas para todo o processo. Não faça pela metade.</p>
+                            <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Sacos de lixo, caixas de papelão para doação.
+                            <br><strong>Tempo Estimado:</strong> 30-45 minutos (dependendo do tamanho do armário).
+                            </p>
+						</div>
+                        <div id="step-2" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 2: Limpeza Profunda</h3>
+                            <p class="text-gray-600 mb-4">Com o armário vazio, faça uma limpeza completa. Aspire ou varra o fundo, limpe as prateleiras, gavetas e barras com pano úmido. Aproveite para verificar se há sinais de traças ou umidade.</p>
+                            <p class="text-gray-600 mb-4">Se necessário, passe produtos anti-traças ou desumidificadores.</p>
+                            <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Aspirador, panos de limpeza, produto multiuso, anti-traças.
+                            <br><strong>Tempo Estimado:</strong> 20-30 minutos.
+                            <br><a href="https://lista.mercadolivre.com.br/produto-multiuso-limpeza" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Produtos de limpeza no Mercado Livre</a> | 
+                            <a href="https://www.amazon.com.br/s?k=produto+multiuso+limpeza" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Produtos de limpeza na Amazon</a>
+							</p>
+						</div>
+                        <div id="step-3" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 3: Triagem - Decisões Importantes</h3>
+                            <p class="text-gray-600 mb-4">Agora vem a parte mais difícil e importante. Separe tudo em 4 grupos:</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li><strong>• Manter:</strong> Peças que você usa e ama</li>
+                                <li><strong>• Doar:</strong> Roupas em bom estado que não usa mais</li>
+                                <li><strong>• Descartar:</strong> Itens danificados, manchados ou gastos demais</li>
+                                <li><strong>• Dúvida:</strong> Guarde em uma caixa por 6 meses. Se não usar, doe.</li>
+                            </ul>
+                            <p class="text-gray-600"><strong>Regra prática:</strong> Se não usou nos últimos 12 meses, provavelmente pode doar.</p>
+                            <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Caixas ou sacolas para separação.
+                            <br><strong>Tempo Estimado:</strong> 60-90 minutos (a etapa mais demorada).
+                        </p>
+						</div>
+                        <div id="step-4" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 4: Categorização por Tipo</h3>
+                            <p class="text-gray-600 mb-4">Organize as peças que você decidiu manter por categorias:</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li><strong>• Cabides:</strong> Camisas, blazers, vestidos, casacos</li>
+                                <li><strong>• Gavetas/Prateleiras:</strong> Camisetas, underwear, meias, pijamas</li>
+                                <li><strong>• Dobradas:</strong> Calças jeans, moletons, suéteres</li>
+                                <li><strong>• Sapatos:</strong> Por frequência de uso</li>
+                                <li><strong>• Acessórios:</strong> Bolsas, cintos, lenços</li>
+                            </ul>
+                            <p class="text-gray-600">Agrupe por tipo primeiro, depois por cor se desejar.</p>
+                            <p class="mt-4 text-gray-500">
+                            <strong>Dica Profissional:</strong> Peças mais usadas ficam na altura dos olhos e das mãos.
+                            <br><strong>Tempo Estimado:</strong> 30-45 minutos.
+                            </p>
+						</div>
+                        <div id="step-5" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 5: Organização e Acomodação</h3>
+                            <p class="text-gray-600 mb-4">Agora é hora de colocar tudo de volta de forma inteligente:</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li><strong>• Altura dos olhos:</strong> Roupas do dia a dia</li>
+                                <li><strong>• Parte superior:</strong> Itens sazonais ou menos usados</li>
+                                <li><strong>• Parte inferior:</strong> Sapatos, roupas íntimas</li>
+                                <li><strong>• Use organizadores:</strong> Gavetas divididas, caixas, cabides especiais</li>
+                            </ul>
+                            <p class="text-gray-600"><strong>Método Marie Kondo:</strong> Dobre as roupas na vertical para ver tudo de uma vez.</p>
+                            <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Organizadores, divisórias, cabides uniformes.
+                            <br><strong>Tempo Estimado:</strong> 45-60 minutos.
+                            </p>
+						</div>
+                        <div id="step-6" class="step-content hidden">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Etapa 6: Etiquetagem e Manutenção</h3>
+                            <p class="text-gray-600 mb-4">Para manter a organização a longo prazo:</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li><strong>• Etiquete:</strong> Gavetas, caixas e prateleiras</li>
+                                <li><strong>• Regra dos 5 minutos:</strong> Arrume diariamente por 5 minutos</li>
+                                <li><strong>• Regra "um entra, um sai":</strong> Para cada peça nova, doe uma antiga</li>
+                                <li><strong>• Revisão mensal:</strong> Verifique se tudo está no lugar</li>
+                            </ul>
+                            <p class="text-gray-600">A manutenção é mais importante que a organização inicial.</p>
+                            <p class="mt-4 text-gray-500">
+                            <strong>Materiais Necessários:</strong> Etiquetas, caneta, rotina de manutenção.
+                            <br><strong>Tempo Estimado:</strong> 15-20 minutos + 5 min/dia de manutenção.
+                            </p>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Produtos Essenciais para Organização</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Invista nos organizadores certos para manter a ordem e otimizar o espaço.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    
+                    <!-- Cabides Section -->
+                    <div class="card p-6 col-span-full">
+                        <h3 class="text-xl font-bold mb-2 text-center">Cabides e Barras</h3>
+                        <p class="text-gray-600 text-center mb-4">Invista em cabides uniformes para otimizar espaço e criar visual harmônico.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Cabides de Veludo</h4>
+                                <p class="text-sm text-gray-600">Antiderrapante, ultra finos, economizam 50% do espaço. Ideais para blusas e vestidos.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 3,00 - R$ 6,00 (unidade)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/cabides-veludo" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=cabides+veludo" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Cabides Multifuncionais</h4>
+                                <p class="text-sm text-gray-600">Para calças, cintos e lenços. Cada cabide acomoda até 5 peças.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 15,00 - R$ 35,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/cabides-multifuncionais" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=cabides+multifuncionais" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Barras Extensoras</h4>
+                                <p class="text-sm text-gray-600">Duplique o espaço para cabides com barras adicionais ajustáveis.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 25,00 - R$ 60,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/barra-extensora-armario" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=barra+extensora+armario" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Organizadores de Gavetas Section -->
+                    <div class="card p-6 col-span-full mt-8">
+                        <h3 class="text-xl font-bold mb-2 text-center">Organizadores de Gavetas</h3>
+                        <p class="text-gray-600 text-center mb-4">Divida gavetas para manter underwear, meias e acessórios sempre organizados.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Divisórias Ajustáveis</h4>
+                                <p class="text-sm text-gray-600">Compartimentos personalizáveis para gavetas de qualquer tamanho.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 20,00 - R$ 45,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/divisorias-gavetas-adjustaveis" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=divisorias+gavetas+adjustaveis" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Caixas Organizadoras</h4>
+                                <p class="text-sm text-gray-600">Conjuntos de caixas de diferentes tamanhos para categorizar itens pequenos.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 30,00 - R$ 80,00 (conjunto)</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/caixas-organizadoras-gavetas" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=caixas+organizadoras+gavetas" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Organizador de Meias</h4>
+                                <p class="text-sm text-gray-600">Compartimentos individuais para cada par de meias e cuecas/calcinhas.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 25,00 - R$ 50,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/organizador-meias-cuecas" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=organizador+meias+cuecas" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Acessórios e Sapatos Section -->
+                    <div class="card p-6 col-span-full mt-8">
+                        <h3 class="text-xl font-bold mb-2 text-center">Organizadores de Sapatos e Acessórios</h3>
+                        <p class="text-gray-600 text-center mb-4">Soluções específicas para sapatos, bolsas e acessórios menores.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Sapateira Modular</h4>
+                                <p class="text-sm text-gray-600">Prateleiras empilháveis que se adaptam ao espaço disponível.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 60,00 - R$ 150,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/sapateira-modular" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=sapateira+modular" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Organizador de Cintos</h4>
+                                <p class="text-sm text-gray-600">Suporte giratório ou gancho múltiplo para visualizar todos os cintos.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 20,00 - R$ 40,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/organizador-cintos" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=organizador+cintos" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                            <div class="card p-4">
+                                <h4 class="text-lg font-bold">Suporte para Bolsas</h4>
+                                <p class="text-sm text-gray-600">Ganchos e prateleiras específicas para manter bolsas com formato.</p>
+                                <p class="text-sm font-bold mt-2">Preço médio: R$ 35,00 - R$ 80,00</p>
+                                <div class="mt-2 flex flex-col space-y-2">
+                                    <a href="https://lista.mercadolivre.com.br/suporte-organizador-bolsas" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver no Mercado Livre</a>
+                                    <a href="https://www.amazon.com.br/s?k=suporte+organizador+bolsas" target="_blank" class="w-full text-center btn-secondary font-semibold py-2 px-4 rounded-full text-xs">Ver na Amazon</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diy-vs-pro" class="py-16">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Organizar Sozinho ou Contratar um Profissional?</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">Compare as vantagens de cada abordagem para tomar a melhor decisão.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">🏠 Faça Você Mesmo (DIY)</h3>
+                        <p class="mb-4 text-gray-600">Uma jornada pessoal de autoconhecimento, onde você aprende sobre seus hábitos e desenvolve sistemas personalizados.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Custo baixo (apenas organizadores).</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Você conhece suas necessidades.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Aprendizado para manter a organização.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Demanda tempo e energia significativos.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Pode ser emocionalmente desafiador.</li>
+                        </ul>
+                    </div>
+                    <div class="card p-8">
+                        <h3 class="text-2xl font-bold mb-4">👩‍💼 Personal Organizer</h3>
+                        <p class="mb-4 text-gray-600">Expertise profissional para transformação rápida e duradoura, com sistemas personalizados para seu estilo de vida.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Resultado profissional garantido.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Rapidez e eficiência.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Orientação para manutenção.</li>
+                            <li class="flex"><span class="mr-2 text-green-500">✔</span> Neutralidade emocional nas decisões.</li>
+                            <li class="flex"><span class="mr-2 text-red-500">❌</span> Investimento maior (R$200 - R$800 por projeto).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Veja a Organização na Prática</h2>
+                    <p class="text-lg text-gray-600 mt-2 max-w-3xl mx-auto">Assista aos vídeos para entender as técnicas e se inspirar para organizar seus próprios armários.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- Video 1 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/VpO3MZjgP5s" title="Como organizar guarda-roupa" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 2 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/7dwWEvDhqR8" title="Organização método Marie Kondo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 3 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/Ek8JnCphiRo" title="Organizadores de armário DIY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video 4 -->
+                    <div class="card p-4">
+                        <div class="aspect-video w-full overflow-hidden rounded-lg">
+                            <iframe class="w-full h-full" src="https://www.youtube.com/embed/_KQTcFGLWd8" title="Como dobrar roupas para economizar espaço" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Guia Organização de Armários. Transforme seus espaços, transforme sua vida!</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            const stepLinks = document.querySelectorAll('.step-link');
+            const stepContents = document.querySelectorAll('.step-content');
+
+            stepLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Remove active class from all links
+                    stepLinks.forEach(l => {
+                        l.classList.remove('active', 'btn-primary');
+                        l.classList.add('btn-secondary');
+                    });
+                    
+                    // Add active class to clicked link
+                    link.classList.add('active', 'btn-primary');
+                    link.classList.remove('btn-secondary');
+
+                    // Hide all content
+                    stepContents.forEach(content => {
+                        content.classList.add('hidden');
+                    });
+
+                    // Show target content
+                    const targetStep = link.getAttribute('data-step');
+                    const targetContent = document.getElementById(`step-${targetStep}`);
+                    if (targetContent) {
+                        targetContent.classList.remove('hidden');
+                    }
+                });
+            });
+
+            // Navigation highlight
+            const navLinks = document.querySelectorAll('nav a');
+            const sections = document.querySelectorAll('main section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href').includes(current)) {
+                        link.classList.add('active');
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+</html>
